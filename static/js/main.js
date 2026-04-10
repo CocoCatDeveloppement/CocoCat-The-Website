@@ -95,3 +95,14 @@ document.addEventListener("DOMContentLoaded",() => {
 });
 
 
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bouton = document.querySelector(".surprise");
+  const message = document.querySelector(".monange");
+
+  bouton.addEventListener("click", () => {
+    message.classList.toggle("show");
+  });
+});
+
