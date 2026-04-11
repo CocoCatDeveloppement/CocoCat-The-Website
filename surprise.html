@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" lang="FR">
+        <title>CocoCatDev</title>
+        <script src="static/js/main.js" defer></script>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="icon" href="static/coco.ico.png">
+         <style>
+            /* Police romantique + reset léger */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Georgia", "Times New Roman", serif;
+    background: radial-gradient(circle at top, #ffdde1 0%, #ee9ca7 40%, #4b000f 100%);
+    color: #2b0006;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Conteneur principal */
+body > div,
+.poemes {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Bloc du haut (titre + présentation) */
+.haut,
+.page {
+    /* comme tu as class="haut de page", ça applique .haut et .page */
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(6px);
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    margin-bottom: 25px;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Petits cœurs décoratifs */
+.haut::before,
+.haut::after {
+    content: "❤";
+    position: absolute;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.35);
+}
+
+.haut::before {
+    top: -10px;
+    left: 10px;
+}
+
+.haut::after {
+    bottom: -20px;
+    right: 20px;
+}
+
+/* Titre principal */
+.titre {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #fff5f7;
+    text-shadow: 0 0 10px rgba(255, 0, 80, 0.7);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Texte de présentation */
+.presentation {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #ffe6eb;
+    text-align: justify;
+}
+
+/* Bloc des poèmes */
+.poemes {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    padding: 25px 22px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+/* Texte du poème */
+.poeme {
+    font-size: 1.05rem;
+    line-height: 1.9;
+    color: #ffeef2;
+    white-space: pre-line; /* pour garder les retours à la ligne si tu en ajoutes */
+}
+
+/* Effet léger sur les liens (si tu en ajoutes) */
+a {
+    color: #ffb3c6;
+    text-decoration: none;
+    border-bottom: 1px dashed rgba(255, 179, 198, 0.7);
+}
+
+a:hover {
+    color: #ffffff;
+    border-bottom-style: solid;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .titre {
+        font-size: 1.9rem;
+    }
+
+    .presentation,
+    .poeme {
+        font-size: 0.98rem;
+    }
+}
+
+         </style>
+    </head>
+    <body>
+        <div class="haut de page">
+        <h1 class="titre">Bievenue chez nous mon ange</h1>
+        
+
+
+        <p class="presentation">
+            Oui, je suis assez fou de toi pour coder une page web pour te dire que je t'aime... hihi ! 
+            Les dév aussi craquent aussi haha ! (pour les curieux qui se seraient retrouvés ici. )
+            Je t'aime, infiniment fort ! Si cela te convient, laisse-moi t'écrire un poème, et pourquoi pas
+            en ajouter au fur et à mesure. 
+
+        </p>
+
+        </div>
+        <div class="poemes">
+
+        <p class="poeme">
+            Quand tes yeux qui brillent plus que des étoiles traversent mon âme, 
+            C'est les bleus et les cicatrices qui, d'elles-même s'en vont. 
+            Mon ange, guère tombé du ciel mais apparue par la force du destin, 
+            Je ne crois pas en Dieu mais je le prierais presque
+            De m'avoir fait rencontré la plus magnfiques des âmes, 
+            Et au délà de ça la plus belles des âmes. 
+            Je t'aime, rien ni personne ne fera cesser de te l'exprimer, 
+            Tous les moyens romantiques et magiques sont bons à être exploité
+            Pour te manifester mon amour et cette joie partagée. 
+            Mon amour, je ne sais plus comment te dire que je t'aime, 
+            Ton amour me transperce, il me soigne, il m'apaise et me brûle parfois
+            J'en suis si heureux, si reconnaissant, 
+            De cet amour, grand et flamboyant, 
+            Qui nous nouris de bonheur et de projets tant désirés, 
+            De folies et joies partagées... 
+
+            À suivre... 
+            
+        </p>
+
+        </div>
+
+    </body>
+</html>

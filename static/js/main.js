@@ -106,3 +106,19 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded",() => {
+  const linkToMyHeart = document.getElementById("monAnge");
+  linkToMyHeart.addEventListener("click",() => {
+    try {
+      window.location.href = "surprise.html";
+    }
+    catch(error){
+      alert("Erreur de chargement de ma surprise... Je t'aime de ton mon coeur, mon pc est juste jaloux haha ! ");
+
+    }
+   
+  });
+  
+
+ 
+});
