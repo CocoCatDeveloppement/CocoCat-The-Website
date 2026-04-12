@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CocoCatDev</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="{{ url_for('static', filename='coco.ico.png') }}">
+</head>
+
+<body>
+
+<header></header>
+
+<nav id="nav_dessus">
+    <h1>Bienvenue sur le site de CocoCatDev</h1>
+
+    <img src="{{ url_for('static', filename='coco.ico.png') }}"
+         alt="Logo de CocoCatDev"
+         width="200" height="200">
+
+    <div id="l1_id"></div>
+
+    <h3>Compétences (cliquez pour texte explicatif)</h3>
+
+    <ul id="skills-list" class="custom-list">
+        <li class="l1">HTML/CSS</li>
+        <li class="l2">JavaScript</li>
+        <li class="l3">Python</li>
+        <li class="l4">Pygame</li>
+        <li class="l4bis">Flask</li>
+        <li class="l5">Tkinter</li>
+        <li class="l6">Langage C</li>
+    </ul>
+
+    <div class="games">
+        <button id="bouton">🎮</button>
+        <div class="cont">
+            <a href="{{ url_for('main.jeu') }}" class="btn-jeu">🎮 Jouer à Flappy Cat !</a>
+            <a href="{{ url_for('main.star') }}" class="btn-jeu">🎮 Jouer à StarCatcherJS !</a>
+            <a href="{{ url_for('main.shooter') }}" class="btn-jeu">🎮 Jouer à Snake Mobile !</a>
+        </div>
+    </div>
+</nav>
+
+<div class="reveal" id="par">
+    <p>
+        Bonjour ! Moi c'est CocoCatDev, ravi de faire votre connaissance !
+        Jeune apprenti developpeur <strong>autodidacte</strong>, j'ai créé ce petit site
+        dans l'objectif de m'exercer au developpement web...
+    </p>
+</div>
+
+<div class="reveal" id="yt">
+    <h2>Mes YouTubeurs favoris !</h2>
+    <ul class="list">
+        <li class="li1"><a href="https://www.youtube.com/@EvoluNoob">EvoluNoob</a></li>
+        <li class="li2"><a href="https://www.youtube.com/@Elparadeponpon">Elparadeponpon</a></li>
+        <li class="li3"><a href="https://www.youtube.com/@LeoTechMaker">LeoTechMaker</a></li>
+    </ul>
+</div>
+
+<div class="card">
+    <div class="card-front">
+        <div class="js">
+            <h3>JavaScript</h3>
+            <p>Niveau : ✅✅✅</p>
+        </div>
+
+        <div class="py">
+            <h3>Python</h3>
+            <p>Niveau : ✅✅✅✅</p>
+        </div>
+
+        <div class="c">
+            <h3>Langage C</h3>
+            <p>Niveau : ✅✅</p>
+        </div>
+    </div>
+
+    <div class="card-back">
+        <p>DOM, events, fetch, animations</p>
+    </div>
+
+    <div class="card-back-p">
+        <p>App graphique Tkinter, Flask, Pygame, SQLite3</p>
+    </div>
+
+    <div class="card-back-c">
+        <p>Programmes consoles très basiques, notions de base</p>
+    </div>
+</div>
+
+<span class="amour">
+    <button class="surprise">❤️</button>
+</span>
+
+<div class="monange" id="monAnge">
+    <p>M + L = ❤️</p>
+</div>
+
+<footer>
+    <div class="reveal" id="contient">
+        <p id="pp">© <span id="mini-p">2025</span> CocoCatDev. Tous droits réservés.</p>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
