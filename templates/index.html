@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>CocoCatDev</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="{{ url_for('static', filename='js/main.js') }}" defer></script>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/js/main.js" defer></script>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="{{ url_for('static', filename='coco.ico.png') }}">
+    <link rel="icon" href="../static/coco.ico.png">
 </head>
 
 <body>
@@ -18,7 +18,7 @@
 <nav id="nav_dessus">
     <h1>Bienvenue sur le site de CocoCatDev</h1>
 
-    <img src="{{ url_for('static', filename='coco.ico.png') }}"
+    <img src="../static/coco.ico.png"
          alt="Logo de CocoCatDev"
          width="200" height="200">
 
@@ -39,9 +39,9 @@
     <div class="games">
         <button id="bouton">🎮</button>
         <div class="cont">
-            <a href="{{ url_for('main.jeu') }}" class="btn-jeu">🎮 Jouer à Flappy Cat !</a>
-            <a href="{{ url_for('main.star') }}" class="btn-jeu">🎮 Jouer à StarCatcherJS !</a>
-            <a href="{{ url_for('main.shooter') }}" class="btn-jeu">🎮 Jouer à Snake Mobile !</a>
+            <a href="jeu.html" class="btn-jeu">🎮 Jouer à Flappy Cat !</a>
+            <a href="star.html" class="btn-jeu">🎮 Jouer à StarCatcherJS !</a>
+            <a href="star.html" class="btn-jeu">🎮 Jouer à Snake Mobile !</a>
         </div>
     </div>
 </nav>
